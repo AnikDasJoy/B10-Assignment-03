@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rinterio</title>
+    <!-- Google Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <!-- DaisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/388dd6248e.js" crossorigin="anonymous"></script>
+
+    <style>
+        .manrope {
+            font-family: "Manrope", system-ui;
+        }
+    </style>
+
+    <!-- tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        "green": 'rgb(171, 239, 95)',
+                    }
+                }
+            }
+        }
+    </script>
+
+
+</head>
+
+<body class="manrope">
+    <header class="max-w-screen-xl mx-auto mt-4">
+        <nav class="flex items-center ">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a>Item 1</a></li>
+
+                        </ul>
+                    </div>
+                    <i class="fa-solid fa-arrow-right text-ellipsis -rotate-45 bg-green rounded-full p-3 "
+                        style="color: black;"></i>
+                    <a class="btn btn-ghost text-4xl font-extrabold">Rinterio</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-base">
+                        <li><a>Home</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end space-x-5 hidden lg:block">
+                    <i class="fa-solid fa-magnifying-glass text-2xl"></i>
+                    <i class="fa-solid fa-cart-shopping text-2xl" style="color: #c5cfe2;"></i>
+                    <a class="btn bg-green rounded-full text-xl font-bold">Book
+                        Consult <i class="fa-solid fa-arrow-right text-ellipsis  -rotate-45 bg-black rounded-full p-3"
+                            style="color: white;"></i></a>
+                </div>
+
+            </div>
+
+            <div>
+                <li class="block lg:hidden mr-5"><i class="fa-solid fa-bars" style="color: black;"></i></li>
+            </div>
+        </nav>
+    </header>
+</body>
+
+</html>
