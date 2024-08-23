@@ -31,6 +31,9 @@
                     colors: {
                         clifford: '#da373d',
                         "green": 'rgb(171, 239, 95)',
+                        "color": 'rgb(33, 33, 33)',
+                        "color2": 'rgba(171, 239, 95, 0.5)',
+                        "liveable": 'rgb(255, 255, 255)',
                     }
                 }
             }
@@ -41,7 +44,8 @@
 </head>
 
 <body class="manrope">
-    <header class="max-w-screen-xl mx-auto mt-4">
+    <!-- <header class="max-w-screen-xl mx-auto mt-4"> -->
+    <header class="lg:container mx-auto mt-4">
         <nav class="flex items-center ">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
@@ -87,6 +91,77 @@
             </div>
         </nav>
     </header>
+
+    <!-- <main class="max-w-screen-lg mx-auto"> -->
+    <main class="md:container mx-auto">
+        <!-- banner section -->
+        <div class="space-y-10 text-center">
+            <div class="grid grid-cols-1 place-items-center">
+                <img src="./assets/banner.png" alt="">
+            </div>
+            <h1 class="text-4xl lg:text-7xl font-extrabold text-color">A barn house of this design has a striking
+                appearance</h1>
+
+            <p class="">The barn house captivates with its blend of rustic
+                charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that
+                flood the space with natural light.</p>
+
+            <div>
+                <a class="btn bg-color2 rounded-full text-2xl font-bold px-14 py-2 pb-14 justify-center items-center">View
+                    Details<i class="fa-solid fa-arrow-right text-ellipsis -rotate-45 bg-green rounded-full p-3 "
+                        style="color: black;"></i></a>
+            </div>
+        </div>
+
+        <!-- liveable spaces section -->
+        <section class="my-20 text-center px-4 space-x-2">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:ml-24 lg:text-left">
+                <div class="space-y-5 ">
+                    <a class="btn bg-liveable rounded-full text-xl font-bold px-10 justify-center items-center"><i
+                            class="fa-solid fa-arrow-right"></i>About Us</a>
+                    <h1 class="text-4xl lg:text-5xl font-extrabold text-color">We design thoughtful, liveable
+                        spaces
+                    </h1>
+
+                    <p>
+                        The barn house captivates with its blend of rustic charm and
+                        modern sophistication, featuring weathered wood, sleek metal accents.
+                    </p>
+
+                    <div class="flex text-left gap-4  px-4 py-4 rounded-lg bg-slate-100">
+                        <div>
+                            <img src="./assets/commercial.png" alt="">
+                        </div>
+
+                        <div>
+                            <h6 class="text-2xl font-bold text-color">Commercial</h6>
+                            <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex text-left gap-4  px-4 py-4 rounded-lg bg-slate-100">
+                        <div>
+                            <img src="./assets/residential.png" alt="">
+                        </div>
+
+                        <div>
+                            <h6 class="text-2xl font-bold text-color">Residential</h6>
+                            <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="./assets/Rectangle.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- liveable spaces section -->
+        <section>
+
+        </section>
+    </main>
 </body>
 
 </html>
